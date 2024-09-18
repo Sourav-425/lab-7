@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the following form to help us understand your preferences better.</p>
+
+    <form id="survey-form" class="inline">
+
+    
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+     
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age" required>
+
+ 
+        <label for="dropdown">Favorite Programming Language:</label>
+        <select id="dropdown" name="language">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="ruby">Ruby</option>
+        </select>
+
+    
+        <p>How often do you code?</p>
+        <input type="radio" id="daily" name="frequency" value="daily" required>
+        <label for="daily">Daily</label><br>
+        <input type="radio" id="weekly" name="frequency" value="weekly">
+        <label for="weekly">Weekly</label><br>
+        <input type="radio" id="monthly" name="frequency" value="monthly">
+        <label for="monthly">Monthly</label>
+
+      
+        <p>Select your preferred development tools:</p>
+        <input type="checkbox" id="vs-code" name="tools" value="vs-code">
+        <label for="vs-code">VS Code</label><br>
+        <input type="checkbox" id="sublime" name="tools" value="sublime">
+        <label for="sublime">Sublime Text</label><br>
+        <input type="checkbox" id="vim" name="tools" value="vim">
+        <label for="vim">Vim</label>
+
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" placeholder="Enter any other comments here"></textarea><br>
+
+       
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+</body>
+</html>
